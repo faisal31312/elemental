@@ -1,0 +1,74 @@
+
+
+local ThugId = {
+    [0] = true,
+}
+
+local StarId = {
+    [7707018025] = true,
+    [566964628] = true,
+    [7327961600] = true,
+    [2838173673] = true,
+    [5385535892] = true,
+    [4063509451] = true,
+    [2048691322] = true,
+    [7370212659] = true,
+    [2271005673] = true,
+    [3267361905] = true,
+    [29670668] = true,
+    [3494609732] = true,
+    [5003080542] = true,
+    [116551181] = true,
+    [4192484188] = true,
+    [7380381303] = true,
+    [1929265210] = true,
+    [4886767264] = true,
+    [7454961773] = true,
+    [1712049069] = ture,
+    [7531990754] = true,
+    [7514255601] = true,
+    [7456702915] = true,
+    [1671381707] = true,
+    [3344002441] = true,
+    [7513472485] = true,
+}
+
+local DetectiveId = {
+    [7478878044] = true,
+}
+
+local OwnerId = {
+    [3482348120] = true,
+    [7706854865] = true,
+    [7360048981] = true,
+    [7361303723] = true,
+    [7356284598] = true,
+    [4439254684] = true,
+    [7453858568] = true,
+}
+
+
+
+for _, v in pairs(game:GetService('Players'):GetChildren()) do
+	if StarId[v.UserId] then
+		if v.Character and v.Character.Parent.Name == 'Players' then
+			v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[⭐] ' .. v.DisplayName)
+		end
+	elseif DetectiveId[v.UserId] then
+		if v.Character and v.Character.Parent.Name == 'Players' then
+			v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🕵️‍♂️] ' .. v.DisplayName)
+		end
+	elseif ThugId[v.UserId] then
+		if v.Character and v.Character.Parent.Name == 'Players' then
+			v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🛡️] ' .. v.DisplayName)
+		end
+	elseif OwnerId[v.UserId] then
+		if v.Character and v.Character.Parent.Name == 'Players' then
+			v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑] ' .. v.DisplayName)
+		end
+	elseif v.Character and v.Character.Parent.Name == 'Players' then
+		if not v.Character:FindFirstChild('UpperTorso'):FindFirstChild('BodyBackAttachment') then
+			v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[😎] ' .. v.DisplayName)
+		end
+	end
+end
