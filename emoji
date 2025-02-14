@@ -38,6 +38,7 @@ local DetectiveId = {
 }
 
 local OwnerId = {
+    [7453858568] = true,
     [3482348120] = true,
     [7706854865] = true,
     [7360048981] = true,
