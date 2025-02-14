@@ -5,6 +5,7 @@ local ThugId = {
 }
 
 local StarId = {
+    [7966697200] = true,
     [7707018025] = true,
     [566964628] = true,
     [7327961600] = true,
