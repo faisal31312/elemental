@@ -48,8 +48,8 @@ local OwnerId = {
     [4439254684] = true,
     [7453858568] = true,
     [8016065038] = true,
+    [2607678553] = true,
 }
-
 
 for _, v in pairs(game:GetService('Players'):GetChildren()) do
 	if StarId[v.UserId] then
