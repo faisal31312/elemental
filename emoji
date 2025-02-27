@@ -61,7 +61,7 @@ local DetectiveId = {
 }
 
 local OwnerId = {
-    [0] = true,
+    [2607678553] = true,
     [0] = true,
     [0] = true,
     [0] = true,
