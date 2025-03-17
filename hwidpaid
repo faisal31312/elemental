@@ -1,6 +1,5 @@
--- nuh uh act smart is not exist for you
 return {
     HWID = {
-        "hwid_here", -- discord id
-    }
+    "1126864494996500500": "mama"
+}
 }
