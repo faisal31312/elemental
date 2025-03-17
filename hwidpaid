@@ -1,4 +1,5 @@
--- nuh uh dont try to be smart 🤓
 return {
-    HWID, -- discord id
+    HWID = {
+    "1126864494996500500": "123"
+}
 }
